@@ -9,11 +9,17 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { ProfilePageComponent } from './components/profile-page/profile-page.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { GenericCardComponent } from './shared/generic-card/generic-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
+    ProfilePageComponent,
+    PageNotFoundComponent,
+    GenericCardComponent,
   ],
   imports: [
     BrowserModule,
