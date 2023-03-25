@@ -1,9 +1,23 @@
 .main-container {
-    padding: 5px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
-.sub-container {
-    padding: 15px;
-    border: 1px solid;
-    border-radius: 5px;
+.block {
+    height: auto;
+    width: 400px;
+    text-align: left;
+}
+
+.center {
+    margin: auto;
+}
+
+.left {
+    margin: auto auto auto 0;
+}
+
+.right {
+    margin: auto 0 auto auto;
 }
