@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./generic-card.component.scss']
 })
 export class GenericCardComponent {
+
   @Input("propTitle") propTitle: string;
   @Input("propValue") propValue: string | Date;
 }

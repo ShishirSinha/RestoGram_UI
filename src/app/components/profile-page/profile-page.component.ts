@@ -8,28 +8,31 @@ import { User } from 'src/app/models/User.model';
   styleUrls: ['./profile-page.component.scss']
 })
 export class ProfilePageComponent implements OnInit {
-  users: User[] = [
-    {
-      username: "Siddharth",
-      user_id: "1",
-      address: "Test Address",
-      email: "siddharth@gmail.com",
-      date_of_birth: new Date(),
-    }
-  ];
+
+  userFromUrl: User = {
+    username: "Test User",
+    user_id: "1",
+    address: "Test Address",
+    email: "test@gmail.com",
+    date_of_birth: new Date(),
+  };
   currentUser: User;
+
   constructor(
     private activeRoute: ActivatedRoute,
     private router: Router,
   ) { }
+
   ngOnInit(): void {
     this.activeRoute.params.subscribe(params => {
       if (params["id"]) {
-        let userFound = this.users.find(u => u.user_id == params["id"]);
-        if (userFound) this.currentUser = userFound;
-        else this.router.navigate(["/login"]);
+        let userFound = this.userFromUrl.user_id == params["id"] ? this.userFromUrl : null;
+        if (userFound) 
+          this.currentUser = userFound;
+        else 
+          this.router.navigate(["/login"]);
       }
     })
-
   }
+
 }
