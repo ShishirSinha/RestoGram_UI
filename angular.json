@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Restrogram": {
+    "Restogram": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/restro-gram",
+            "outputPath": "dist/resto-gram",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Restrogram:build:production"
+              "browserTarget": "Restogram:build:production"
             },
             "development": {
-              "browserTarget": "Restrogram:build:development"
+              "browserTarget": "Restogram:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Restrogram:build"
+            "browserTarget": "Restogram:build"
           }
         },
         "test": {
